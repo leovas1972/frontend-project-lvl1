@@ -16,14 +16,17 @@ const even = () => {
     const yes = answerToLoverCase.includes('yes');
     const no = answerToLoverCase.includes('no');
     if((random%2 === 0 && yes) || (random%2 !==0 && no)){
-      console.log('Correct!');  
+      console.log('Correct');  
     } else {
       console.log(`'yes' is wrong answer ;(. Correct answer was 'no'.
       Let's try again, ${userName}!`);
       break;
     }
-    console.log(`Congratulations, ${userName}!`);
-  }  
+
+    if(i === 2){
+      console.log(`Congratulations, ${userName}!`); 
+    }   
+  } 
 }
 
 export default even;
