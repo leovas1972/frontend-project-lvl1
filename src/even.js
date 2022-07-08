@@ -1,10 +1,9 @@
 import readlineSync from 'readline-sync';
 import getRandomInt from './getRandomInt.js';
+import greetings from './cli.js';
 
 const even = () => {
-  console.log('Welcome to the Brain Games!');
-  const userName = readlineSync.question('May I have your name? ');
-  console.log(`'Hello' ${userName}`);
+  const userName = greetings();
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   
   const numOfQuestion = 3;
@@ -16,7 +15,7 @@ const even = () => {
     const yes = answerToLoverCase.includes('yes');
     const no = answerToLoverCase.includes('no');
     if((random%2 === 0 && yes) || (random%2 !==0 && no)){
-      console.log('Correct');  
+      console.log('Correct!');  
     } else {
       console.log(`'yes' is wrong answer ;(. Correct answer was 'no'.
       Let's try again, ${userName}!`);
