@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
-import getRandomInt from './utils/getRandomInt.js';
-import greetings from './cli.js';
+import getRandomInt from '../utils/getRandomInt.js';
+import greetings from '../cli.js';
 
 const even = () => {
   const userName = greetings();
