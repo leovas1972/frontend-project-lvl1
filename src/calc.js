@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import getRandomInt from './getRandomInt.js';
+import getRandomInt from './utils/getRandomInt.js';
 import greetings from './cli.js';
 
 const sum = (a,b) => a + b;
