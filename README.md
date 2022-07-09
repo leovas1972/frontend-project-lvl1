@@ -4,3 +4,5 @@
 https://asciinema.org/a/IZk9G29H1zYJbXTfPvVY66sGr
 ### Asciinema post link brain-calc:
 https://asciinema.org/a/kNav15lba2yMuQVVcZlWwqTiJ
+### Asciinema post link brain-gcd:
+https://asciinema.org/a/T5BLr0VsJCtaqNQeuoV4NMTxB
