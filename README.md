@@ -6,3 +6,5 @@ https://asciinema.org/a/IZk9G29H1zYJbXTfPvVY66sGr
 https://asciinema.org/a/kNav15lba2yMuQVVcZlWwqTiJ
 ### Asciinema post link brain-gcd:
 https://asciinema.org/a/T5BLr0VsJCtaqNQeuoV4NMTxB
+### Asciinema post link brain-progression:
+https://asciinema.org/a/xxxoNZU2GlTML6xoa3WI6lcb9
