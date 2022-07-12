@@ -15,7 +15,7 @@ const toGetData = () => {
   const step = getRandomInt(1,9);
   const arrayProgression = progressionGeneration(random,step);
   const index = getRandomInt(1,arrayProgression.length - 1);
-  let correctAnswer = arrayProgression[index];
+  let correctAnswer = String(arrayProgression[index]);
   arrayProgression[index] = '..';
   const question = arrayProgression.join(' ');
   return [question, correctAnswer];
