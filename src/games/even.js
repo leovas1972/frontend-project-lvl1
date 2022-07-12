@@ -1,31 +1,20 @@
-import readlineSync from 'readline-sync';
+
 import getRandomInt from '../utils/getRandomInt.js';
-import greetings from '../cli.js';
+import runGames from '../index.js'
 
-const even = () => {
-  const userName = greetings();
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
-  
-  const numOfQuestion = 3;
-  for (let i = 0; i < numOfQuestion; i +=1){
-    let random = getRandomInt(1,21);
-    console.log(`Question: ${random}`);
-    const answer = readlineSync.question('Your answer:');
-    const answerToLoverCase = answer.toLowerCase();
-    const yes = answerToLoverCase.includes('yes');
-    const no = answerToLoverCase.includes('no');
-    if((random%2 === 0 && yes) || (random%2 !==0 && no)){
-      console.log('Correct!');  
-    } else {
-      console.log(`'yes' is wrong answer ;(. Correct answer was 'no'.
-      Let's try again, ${userName}!`);
-      break;
-    }
+const taskGame ='Answer "yes" if the number is even, otherwise answer "no".';
 
-    if(i === 2){
-      console.log(`Congratulations, ${userName}!`); 
-    }   
-  } 
+const toGetData = () => {
+  let number = getRandomInt(1,21);
+  console.log(`Question: ${number}`);
+  const question = `Question: ${number}`
+  const isEven = (num) => num % 2 === 0;
+  const correctAnswer = isEven(number) ? 'yes' : 'no';
+  return [question, correctAnswer];
 }
 
-export default even;
+const runEvenGames = () => {
+  runGames(taskGame, toGetData);
+};
+
+export default runEvenGames;
