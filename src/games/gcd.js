@@ -16,7 +16,7 @@ function NOD () {
 const toGetData = () => {
   const number1 = getRandomInt(1,20);
   const number2 = getRandomInt(1,61);
-  const correctAnswer = NOD(number1, number2);
+  const correctAnswer = String(NOD(number1, number2));
   const question = `Question: ${number1} ${number2}`;
   return [question, correctAnswer];
 }
