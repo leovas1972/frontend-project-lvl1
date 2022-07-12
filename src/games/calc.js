@@ -1,37 +1,29 @@
-import readlineSync from 'readline-sync';
 import getRandomInt from '../utils/getRandomInt.js';
-import greetings from '../cli.js';
+import runGames from '../index.js'
 
-const sum = (a,b) => a + b;
-const minus = (a,b) => a - b;
-const multiply = (a,b) => a * b;
+const taskGame ='What is the result of the expression?';
+const operations = ['+', '-', '*'];
+const functions = (number1, number2, operation) => {
+  if(operation === '+'){
+    return number1 + number2;
+  } else if (operation === '-'){
+    return number1 - number2;
+  } else {
+    return number1 * number2;
+  }
+};
 
-const calc = () => {
-  const userName = greetings();
-  console.log('What is the result of the expression?');
-  const operations = ['+', '-', '*'];
-  const arrFunctions = [sum, minus, multiply];
-
-  const numOfQuestion = 3;
-  for (let i = 0; i < numOfQuestion; i +=1){
-    const num1 = getRandomInt(1,10);
-    const num2 = getRandomInt(1,10);
-    console.log(`Question: ${num1} ${operations[i]} ${num2}`);
-    const answer = arrFunctions[i](num1,num2);
-    const answerUser = Number(readlineSync.question('Your answer:'));
-    
-    if(answer === answerUser){
-      console.log('Correct!'); 
-    } else {
-      console.log(`${answerUser} is wrong answer ;(. Correct answer was ${answer}.
-        Let's try again, ${userName}!`);
-        break;
-    }
-
-    if(i === 2){
-      console.log(`Congratulations, ${userName}!`); 
-    }  
-  }  
+const toGetData = () =>{
+  const number1 = getRandomInt(1,15);
+  const number2 = getRandomInt(1,20);
+  const operation = operations[getRandomInt(0,operations.length - 1)];
+  const correctAnswer = String(functions(number1,number2, operation));
+  const question = `Question: ${number1} ${operation} ${number2}`;
+  return [question, correctAnswer]; 
 }
 
-export default calc;
+const runCalcGames = () => {
+  runGames(taskGame, toGetData);
+};
+
+export default runCalcGames;
