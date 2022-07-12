@@ -9,7 +9,7 @@ const runGames = (taskGame,toGetData) => {
   for(let i = 1; i <= numOfQuestion; i +=1){
     const[question, correctAnswer] = toGetData();
     console.log(`Question: ${question}`);
-    const answerUser = Number(readlineSync.question('Your answer:'));
+    const answerUser = String(readlineSync.question('Your answer:'));
     if(correctAnswer === answerUser){
       console.log('Correct!'); 
     } else {
