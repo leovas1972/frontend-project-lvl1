@@ -1,5 +1,6 @@
 import getRandomInt from '../utils/getRandomInt.js'
 import runGames from '../index.js'
+
 const taskGame ='What number is missing in the progression?';
 const progressionGeneration = (random,step) => {
   const result = [];

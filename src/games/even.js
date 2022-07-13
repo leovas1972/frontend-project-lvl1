@@ -1,4 +1,3 @@
-
 import getRandomInt from '../utils/getRandomInt.js';
 import runGames from '../index.js'
 
