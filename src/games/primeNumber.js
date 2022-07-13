@@ -1,4 +1,4 @@
-import getRandomInt from '../utils.js'
+import {getRandomInt} from '../utils.js'
 import runGames from '../index.js'
 
 const taskGame ='"yes" if given number is prime. Otherwise answer "no".';
