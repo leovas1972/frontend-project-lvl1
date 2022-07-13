@@ -22,8 +22,8 @@ const toGetData = () =>{
   return [question, correctAnswer]; 
 }
 
-const runCalcGames = () => {
+const runCalcGame = () => {
   runGames(taskGame, toGetData);
 };
 
-export default runCalcGames;
+export default runCalcGame;

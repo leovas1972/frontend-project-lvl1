@@ -13,8 +13,8 @@ const toGetData = () => {
   return [question, correctAnswer];
 }
 
-const runEvenGames = () => {
+const runEvenGame = () => {
   runGames(taskGame, toGetData);
 };
 
-export default runEvenGames;
+export default runEvenGame;
