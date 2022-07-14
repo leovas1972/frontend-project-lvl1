@@ -1,5 +1,5 @@
 import {getRandomInt} from '../utils.js';
-import runGames from '../index.js'
+import run from '../index.js'
 
 const taskGame ='What is the result of the expression?';
 const operations = ['+', '-', '*'];
@@ -22,8 +22,8 @@ const toGetData = () =>{
   return [question, correctAnswer]; 
 }
 
-const runCalcGame = () => {
-  runGames(taskGame, toGetData);
+const runCalc = () => {
+  run(taskGame, toGetData);
 };
 
-export default runCalcGame;
+export default runCalc;

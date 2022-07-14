@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import greetings from './cli.js'
 
-const runGames = (taskGame,toGetData) => {
+const run = (taskGame,toGetData) => {
   const numOfQuestion = 3;
   const userName = greetings();
   console.log(taskGame);
@@ -24,4 +24,4 @@ const runGames = (taskGame,toGetData) => {
   }
 }
 
-export default runGames;
+export default run;

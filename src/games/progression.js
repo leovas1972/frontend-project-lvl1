@@ -1,5 +1,5 @@
 import {getRandomInt} from '../utils.js'
-import runGames from '../index.js'
+import run from '../index.js'
 
 const taskGame ='What number is missing in the progression?';
 const progressionGeneration = (random,step) => {
@@ -22,8 +22,8 @@ const toGetData = () => {
   return [question, correctAnswer];
 }
 
-const runProgressionGame = () => {
-  runGames(taskGame, toGetData);
+const runProgression = () => {
+  run(taskGame, toGetData);
 };
 
-export default runProgressionGame;
+export default runProgression;

@@ -1,5 +1,5 @@
 import {getRandomInt} from '../utils.js'
-import runGames from '../index.js'
+import run from '../index.js'
 
 const taskGame ='Find the greatest common divisor of given numbers.';
 function NOD () {
@@ -21,8 +21,8 @@ const toGetData = () => {
   return [question, correctAnswer];
 }
 
-const runGcdGame = () => {
-  runGames(taskGame, toGetData);
+const runGcd = () => {
+  run(taskGame, toGetData);
 };
 
-export default runGcdGame;
+export default runGcd;

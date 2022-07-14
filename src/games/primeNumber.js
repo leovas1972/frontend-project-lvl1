@@ -1,5 +1,5 @@
 import {getRandomInt} from '../utils.js'
-import runGames from '../index.js'
+import run from '../index.js'
 
 const taskGame ='"yes" if given number is prime. Otherwise answer "no".';
 
@@ -19,8 +19,8 @@ const toGetData = () => {
   return [question, correctAnswer];
 };
 
-const runPrimeGame = () => {
-  runGames(taskGame, toGetData);
+const runPrime = () => {
+  run(taskGame, toGetData);
 };
 
-export default runPrimeGame;
+export default runPrime;
