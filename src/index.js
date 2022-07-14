@@ -11,11 +11,11 @@ const run = (description,generateRound) => {
   for(let i = 1; i <= roundsCount; i +=1){
     const[question, correctAnswer] = generateRound();
     console.log(`Question: ${question}`);
-    const answerUser = readlineSync.question('Your answer:');
-    if(correctAnswer === answerUser){
+    const userAnswer = readlineSync.question('Your answer:');
+    if(correctAnswer === userAnswer){
       console.log('Correct!'); 
     } else {
-      console.log(`${answerUser} is wrong answer ;(. Correct answer was ${correctAnswer}.
+      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.
         Let's try again, ${userName}!`);
         break;
     }
