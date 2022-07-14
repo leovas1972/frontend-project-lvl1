@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "Node.js boilerplate package",
+  "description": "Brain-games - five console games",
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
@@ -19,7 +19,7 @@
     "type": "git",
     "url": "git+https://github.com/leovas1972/frontend-project-lvl1.git"
   },
-  "author": "",
+  "author": "Leontev Vasilii",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/leovas1972/frontend-project-lvl1/issues"
