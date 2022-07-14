@@ -2,11 +2,11 @@ import readlineSync from 'readline-sync';
 import greetings from './cli.js'
 
 const run = (taskGame,toGetData) => {
-  const numOfQuestion = 3;
+  const roundsCount = 3;
   const userName = greetings();
   console.log(taskGame);
   
-  for(let i = 1; i <= numOfQuestion; i +=1){
+  for(let i = 1; i <= roundsCount; i +=1){
     const[question, correctAnswer] = toGetData();
     console.log(`Question: ${question}`);
     const answerUser = String(readlineSync.question('Your answer:'));
@@ -18,7 +18,7 @@ const run = (taskGame,toGetData) => {
         break;
     }
 
-    if(i === numOfQuestion){
+    if(i === roundsCount){
       console.log(`Congratulations, ${userName}!`); 
     }   
   }
