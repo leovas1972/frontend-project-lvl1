@@ -4,8 +4,8 @@ import run from '../index.js'
 const description ='"yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (n) =>{
-  for(let i =2, max=Math.sqrt(n); i <=max; i +=1){
-    if(n%2===0){
+  for(let i = 2, max = Math.sqrt(n); i <= max; i += 1){
+    if(n % 2 === 0){
     return false;
     }
   }
