@@ -1,9 +1,9 @@
 import {getRandomInt} from '../utils.js';
 import run from '../index.js'
 
-const taskGame ='Answer "yes" if the number is even, otherwise answer "no".';
+const description ='Answer "yes" if the number is even, otherwise answer "no".';
 
-const toGetData = () => {
+const generateRound = () => {
   let number = getRandomInt(1,21);
   console.log(`Question: ${number}`);
   const question = `Question: ${number}`
@@ -13,7 +13,7 @@ const toGetData = () => {
 }
 
 const runEven = () => {
-  run(taskGame, toGetData);
+  run(description, generateRound);
 };
 
 export default runEven;

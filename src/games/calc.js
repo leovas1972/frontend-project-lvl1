@@ -1,7 +1,7 @@
 import {getRandomInt} from '../utils.js';
 import run from '../index.js'
 
-const taskGame ='What is the result of the expression?';
+const description ='What is the result of the expression?';
 const operations = ['+', '-', '*'];
 const functions = (number1, number2, operation) => {
   if(operation === '+'){
@@ -13,7 +13,7 @@ const functions = (number1, number2, operation) => {
   }
 };
 
-const toGetData = () =>{
+const generateRound = () =>{
   const number1 = getRandomInt(1,15);
   const number2 = getRandomInt(1,20);
   const operation = operations[getRandomInt(0,operations.length - 1)];
@@ -23,7 +23,7 @@ const toGetData = () =>{
 }
 
 const runCalc = () => {
-  run(taskGame, toGetData);
+  run(description, generateRound);
 };
 
 export default runCalc;

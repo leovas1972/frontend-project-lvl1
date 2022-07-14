@@ -1,13 +1,13 @@
 import readlineSync from 'readline-sync';
 import greetings from './cli.js'
 
-const run = (taskGame,toGetData) => {
+const run = (description,generateRound) => {
   const roundsCount = 3;
   const userName = greetings();
-  console.log(taskGame);
+  console.log(description);
   
   for(let i = 1; i <= roundsCount; i +=1){
-    const[question, correctAnswer] = toGetData();
+    const[question, correctAnswer] = generateRound();
     console.log(`Question: ${question}`);
     const answerUser = String(readlineSync.question('Your answer:'));
     if(correctAnswer === answerUser){

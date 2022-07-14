@@ -1,7 +1,7 @@
 import {getRandomInt} from '../utils.js'
 import run from '../index.js'
 
-const taskGame ='Find the greatest common divisor of given numbers.';
+const description ='Find the greatest common divisor of given numbers.';
 function NOD () {
   for (var x = arguments[0], i = 1; i < arguments.length; i++) {
     var y = arguments[i];
@@ -13,7 +13,7 @@ function NOD () {
   return x;
 }
 
-const toGetData = () => {
+const generateRound = () => {
   const number1 = getRandomInt(1,20);
   const number2 = getRandomInt(1,61);
   const correctAnswer = String(NOD(number1, number2));
@@ -22,7 +22,7 @@ const toGetData = () => {
 }
 
 const runGcd = () => {
-  run(taskGame, toGetData);
+  run(description, generateRound);
 };
 
 export default runGcd;

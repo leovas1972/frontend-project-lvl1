@@ -1,7 +1,7 @@
 import {getRandomInt} from '../utils.js'
 import run from '../index.js'
 
-const taskGame ='"yes" if given number is prime. Otherwise answer "no".';
+const description ='"yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (n) =>{
   for(let i =2, max=Math.sqrt(n); i <=max; i +=1){
@@ -12,7 +12,7 @@ const isPrime = (n) =>{
   return n > 1; 
 };
 
-const toGetData = () => {
+const generateRound = () => {
   const number = getRandomInt(1,25);
   const correctAnswer = isPrime(number) ? 'yes' : 'no';
   const question = `${number}`;
@@ -20,7 +20,7 @@ const toGetData = () => {
 };
 
 const runPrime = () => {
-  run(taskGame, toGetData);
+  run(description, generateRound);
 };
 
 export default runPrime;

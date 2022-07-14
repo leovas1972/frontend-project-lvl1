@@ -1,7 +1,7 @@
 import {getRandomInt} from '../utils.js'
 import run from '../index.js'
 
-const taskGame ='What number is missing in the progression?';
+const description ='What number is missing in the progression?';
 const progressionGeneration = (random,step) => {
   const result = [];
   for(let i = 0; i < 10; i +=1){
@@ -11,7 +11,7 @@ const progressionGeneration = (random,step) => {
   return result;
 }
 
-const toGetData = () => {
+const generateRound = () => {
   const random = getRandomInt(1,9);
   const step = getRandomInt(1,9);
   const arrayProgression = progressionGeneration(random,step);
@@ -23,7 +23,7 @@ const toGetData = () => {
 }
 
 const runProgression = () => {
-  run(taskGame, toGetData);
+  run(description, generateRound);
 };
 
 export default runProgression;
