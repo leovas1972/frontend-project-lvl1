@@ -12,17 +12,12 @@ const run = (description,generateRound) => {
     const[question, correctAnswer] = generateRound();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer:');
-    if(correctAnswer === userAnswer){
-      console.log('Correct!'); 
-    } else {
+    if(correctAnswer !== userAnswer){
       console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.
-        Let's try again, ${userName}!`);
-        break;
+      Let's try again, ${userName}!`);
+      return; 
     }
-
-    if(i === roundsCount){
-      console.log(`Congratulations, ${userName}!`); 
-    }   
+    console.log('Correct!');  
   }
 }
 
