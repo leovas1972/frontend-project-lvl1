@@ -17,9 +17,9 @@ const generateRound = () =>{
   const number1 = getRandomInt(1,15);
   const number2 = getRandomInt(1,20);
   const operation = operations[getRandomInt(0,operations.length - 1)];
-  const correctAnswer = String(functions(number1,number2, operation));
+  const answer = String(functions(number1, number2, operation));
   const question = `${number1} ${operation} ${number2}`;
-  return [question, correctAnswer]; 
+  return [question, answer]; 
 }
 
 const runCalc = () => {
