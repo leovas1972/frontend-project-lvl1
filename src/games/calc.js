@@ -1,7 +1,7 @@
 import { getRandomInt, indexSelection } from '../utils.js';
-import run from '../index.js'
+import run from '../index.js';
 
-const description ='What is the result of the expression?';
+const description = 'What is the result of the expression?';
 const operations = ['+', '-', '*'];
 
 const calculate = (number1, number2, operation) => {
@@ -11,10 +11,10 @@ const calculate = (number1, number2, operation) => {
     case '-':
       return number1 - number2;
     case '*':
-      return number1 * number2; 
+      return number1 * number2;
     default:
       return null;
-  } 
+  }
 };
 
 const generateRound = () => {
@@ -25,8 +25,8 @@ const generateRound = () => {
   const answer = String(calculate(number1, number2, operation));
   const question = `${number1} ${operation} ${number2}`;
 
-  return [question, answer]; 
-}
+  return [question, answer];
+};
 
 const runCalc = () => {
   run(description, generateRound);

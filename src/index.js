@@ -7,18 +7,18 @@ const run = (description, generateRound) => {
   const userName = readlineSync.question('May I have your name?');
   console.log(`Hello ${userName}!`);
   console.log(description);
-  
-  for(let i = 0; i < roundsCount; i += 1){
-    const[question, answer] = generateRound();
+
+  for (let i = 0; i < roundsCount; i += 1) {
+    const [question, answer] = generateRound();
     console.log(`Question: ${question}`);
     const answerUser = readlineSync.question('Your answer:');
 
-    if(answer !== answerUser){
+    if (answer !== answerUser) {
       console.log(`${answerUser} is wrong answer ;(. Correct answer was ${answer}.
       Let's try again, ${userName}!`);
-      return; 
+      return;
     }
-    console.log('Correct!');  
+    console.log('Correct!');
   }
   console.log(`Congratulations, ${userName}!`);
 };

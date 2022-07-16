@@ -1,7 +1,7 @@
 import { getRandomInt } from '../utils.js';
 import run from '../index.js';
 
-const description ='"yes" if given number is prime. Otherwise answer "no".';
+const description = '"yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (n) => {
   if (n < 2) {

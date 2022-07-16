@@ -1,10 +1,10 @@
 import { getRandomInt } from '../utils.js';
 import run from '../index.js';
 
-const description ='Find the greatest common divisor of given numbers.';
+const description = 'Find the greatest common divisor of given numbers.';
 
 const gcd = (a, b) => {
-  if(a === b || b === 0){
+  if (a === b || b === 0) {
     return a;
   }
   return gcd(b, a % b);
