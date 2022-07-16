@@ -20,6 +20,7 @@ const run = (description, generateRound) => {
     }
     console.log('Correct!');  
   }
-}
+  console.log(`Congratulations, ${userName}!`);
+};
 
 export default run;
