@@ -7,17 +7,32 @@ __"Игры разума"(brain-games)__ - консольная игра, она
 ***
 
 #### brain-even:
+```
+$brain-even
+```
 [![asciicast](https://asciinema.org/a/5wemQtZlH5lZblyv0llUNYF8L.svg)](https://asciinema.org/a/5wemQtZlH5lZblyv0llUNYF8L)
 
 #### brain-calc:
+```
+$brain-calc
+```
 [![asciicast](https://asciinema.org/a/2eDAZA6R04Bf9krqfcB16aeci.svg)](https://asciinema.org/a/2eDAZA6R04Bf9krqfcB16aeci)
 
 #### brain-gcd:
+```
+$brain-gcd
+```
 [![asciicast](https://asciinema.org/a/T5BLr0VsJCtaqNQeuoV4NMTxB.svg)](https://asciinema.org/a/T5BLr0VsJCtaqNQeuoV4NMTxB)
 
 #### brain-progression:
+```
+$brain-progression
+```
 [![asciicast](https://asciinema.org/a/xxxoNZU2GlTML6xoa3WI6lcb9.svg)](https://asciinema.org/a/xxxoNZU2GlTML6xoa3WI6lcb9)
 
 #### brain-prime:
+```
+$brain-prime
+```
 [![asciicast](https://asciinema.org/a/sSAJBDjKTeiLVNwRKYODGFtEF.svg)](https://asciinema.org/a/sSAJBDjKTeiLVNwRKYODGFtEF)
 
