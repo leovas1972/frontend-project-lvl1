@@ -10,7 +10,7 @@ __"Игры разума"(brain-games)__ - консольная игра, она
 [![asciicast](https://asciinema.org/a/5wemQtZlH5lZblyv0llUNYF8L.svg)](https://asciinema.org/a/5wemQtZlH5lZblyv0llUNYF8L)
 
 #### brain-calc:
-[![asciicast](https://asciinema.org/a/kNav15lba2yMuQVVcZlWwqTiJ.svg)](https://asciinema.org/a/kNav15lba2yMuQVVcZlWwqTiJ)
+[![asciicast](https://asciinema.org/a/2eDAZA6R04Bf9krqfcB16aeci.svg)](https://asciinema.org/a/2eDAZA6R04Bf9krqfcB16aeci)
 
 #### brain-gcd:
 [![asciicast](https://asciinema.org/a/T5BLr0VsJCtaqNQeuoV4NMTxB.svg)](https://asciinema.org/a/T5BLr0VsJCtaqNQeuoV4NMTxB)
