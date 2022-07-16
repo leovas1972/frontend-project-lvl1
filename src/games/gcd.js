@@ -1,25 +1,24 @@
-import {getRandomInt} from '../utils.js'
-import run from '../index.js'
+import { getRandomInt } from '../utils.js';
+import run from '../index.js';
 
 const description ='Find the greatest common divisor of given numbers.';
-function NOD () {
-  for (var x = arguments[0], i = 1; i < arguments.length; i++) {
-    var y = arguments[i];
-    while (x && y) {
-      x > y ? x %= y : y %= x;
-    }
-    x += y;
+
+const gcd = (a, b) => {
+  if(a === b || b === 0){
+    return a;
   }
-  return x;
-}
+  return gcd(b, a % b);
+};
 
 const generateRound = () => {
-  const number1 = getRandomInt(1,20);
-  const number2 = getRandomInt(1,61);
-  const answer = String(NOD(number1, number2));
+  const number1 = getRandomInt(1, 70);
+  const number2 = getRandomInt(1, 70);
+
+  const answer = String(gcd(number1, number2));
   const question = `${number1} ${number2}`;
+
   return [question, answer];
-}
+};
 
 const runGcd = () => {
   run(description, generateRound);
