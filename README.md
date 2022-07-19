@@ -22,17 +22,17 @@ $brain-calc
 ```
 $brain-gcd
 ```
-[![asciicast](https://asciinema.org/a/T5BLr0VsJCtaqNQeuoV4NMTxB.svg)](https://asciinema.org/a/T5BLr0VsJCtaqNQeuoV4NMTxB)
+[![asciicast](https://asciinema.org/a/pIl3Bc4dA689bqpMPyBGTomGk.svg)](https://asciinema.org/a/pIl3Bc4dA689bqpMPyBGTomGk)
 
 #### brain-progression:
 ```
 $brain-progression
 ```
-[![asciicast](https://asciinema.org/a/xxxoNZU2GlTML6xoa3WI6lcb9.svg)](https://asciinema.org/a/xxxoNZU2GlTML6xoa3WI6lcb9)
+[![asciicast](https://asciinema.org/a/jLzQrs2VwrpG8WkfUUjZf1Zdy.svg)](https://asciinema.org/a/jLzQrs2VwrpG8WkfUUjZf1Zdy)
 
 #### brain-prime:
 ```
 $brain-prime
 ```
-[![asciicast](https://asciinema.org/a/sSAJBDjKTeiLVNwRKYODGFtEF.svg)](https://asciinema.org/a/sSAJBDjKTeiLVNwRKYODGFtEF)
+[![asciicast](https://asciinema.org/a/4Z6eMuld495DV7FuaOUNFQvL3.svg)](https://asciinema.org/a/4Z6eMuld495DV7FuaOUNFQvL3)
 
