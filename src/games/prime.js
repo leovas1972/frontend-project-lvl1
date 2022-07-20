@@ -6,10 +6,12 @@ const minRange = 1;
 const maxRange = 100;
 
 const isPrime = (n) => {
+  const max = Math.sqrt(n);
+
   if (n < 2) {
     return false;
   }
-  for (let i = 2; i <= Math.sqrt(n); i += 1) {
+  for (let i = 2; i <= max; i += 1) {
     if (n % i === 0) {
       return false;
     }
