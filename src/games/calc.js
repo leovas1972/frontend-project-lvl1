@@ -29,8 +29,6 @@ const generateRound = () => {
   return [question, answer];
 };
 
-const runCalc = () => {
+export default () => {
   run(description, generateRound);
 };
-
-export default runCalc;

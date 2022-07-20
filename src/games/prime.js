@@ -26,8 +26,6 @@ const generateRound = () => {
   return [question, answer];
 };
 
-const runPrime = () => {
+export default () => {
   run(description, generateRound);
 };
-
-export default runPrime;

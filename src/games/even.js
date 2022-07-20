@@ -15,8 +15,6 @@ const generateRound = () => {
   return [question, answer];
 };
 
-const runEven = () => {
+export default () => {
   run(description, generateRound);
 };
-
-export default runEven;

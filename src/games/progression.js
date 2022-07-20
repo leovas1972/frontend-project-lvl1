@@ -31,8 +31,6 @@ const generateRound = () => {
   return [question, answer];
 };
 
-const runProgression = () => {
+export default () => {
   run(description, generateRound);
 };
-
-export default runProgression;
