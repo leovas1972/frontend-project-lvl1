@@ -6,7 +6,6 @@ const operations = ['+', '-', '*'];
 const minRange = 1;
 const maxRange = 50;
 
-
 const calculate = (number1, number2, operation) => {
   switch (operation) {
     case '+':
