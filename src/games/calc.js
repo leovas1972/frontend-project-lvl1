@@ -3,6 +3,9 @@ import run from '../index.js';
 
 const description = 'What is the result of the expression?';
 const operations = ['+', '-', '*'];
+const minRange = 1;
+const maxRange = 50;
+
 
 const calculate = (number1, number2, operation) => {
   switch (operation) {
@@ -18,8 +21,8 @@ const calculate = (number1, number2, operation) => {
 };
 
 const generateRound = () => {
-  const number1 = getRandomInt(1, 50);
-  const number2 = getRandomInt(1, 50);
+  const number1 = getRandomInt(minRange, maxRange);
+  const number2 = getRandomInt(minRange, maxRange);
   const operation = indexSelection(operations);
 
   const answer = String(calculate(number1, number2, operation));
