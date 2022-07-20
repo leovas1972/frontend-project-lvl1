@@ -7,11 +7,11 @@ const maxRange = 70;
 const minStep = 1;
 const maxStep = 9;
 
-const createProgression = (startNumber, step, lengthOfProgression) => {
+const createLength = (start, step, lengthOfProgression) => {
   const result = [];
 
   for (let i = 0; i < lengthOfProgression; i += 1) {
-    const num = startNumber + step * i;
+    const num = start + step * i;
     result.push(num);
   }
   return result;
@@ -19,14 +19,14 @@ const createProgression = (startNumber, step, lengthOfProgression) => {
 
 const generateRound = () => {
   const lengthOfProgression = 10;
-  const startNumber = getRandomInt(minRange, maxRange);
+  const start = getRandomInt(minRange, maxRange);
   const step = getRandomInt(minStep, maxStep);
 
-  const resultingProgression = createProgression(startNumber, step, lengthOfProgression);
-  const hiddenIndex = resultingProgression.indexOf(indexSelection(resultingProgression));
-  const answer = String(resultingProgression[hiddenIndex]);
-  resultingProgression[hiddenIndex] = '..';
-  const question = resultingProgression.join(' ');
+  const progression = createLength(start, step, lengthOfProgression);
+  const hiddenIndex = indexSelection(progression);
+  const answer = String(progression[hiddenIndex]);
+  progression[hiddenIndex] = '..';
+  const question = progression.join(' ');
 
   return [question, answer];
 };
