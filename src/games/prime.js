@@ -5,14 +5,14 @@ const description = '"yes" if given number is prime. Otherwise answer "no".';
 const minRange = 1;
 const maxRange = 100;
 
-const isPrime = (n) => {
-  const max = Math.sqrt(n);
-
-  if (n < 2) {
+const isPrime = (number) => {
+  if (number < 2) {
     return false;
   }
+
+  const max = Math.sqrt(number);
   for (let i = 2; i <= max; i += 1) {
-    if (n % i === 0) {
+    if (number % i === 0) {
       return false;
     }
   }
@@ -20,10 +20,8 @@ const isPrime = (n) => {
 };
 
 const generateRound = () => {
-  const number = getRandomInt(minRange, maxRange);
-
-  const answer = isPrime(number) ? 'yes' : 'no';
-  const question = number;
+  const question = getRandomInt(minRange, maxRange);
+  const answer = isPrime(question) ? 'yes' : 'no';
 
   return [question, answer];
 };
