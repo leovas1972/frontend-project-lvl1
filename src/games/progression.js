@@ -1,4 +1,4 @@
-import { getRandomInt, indexSelection } from '../utils.js';
+import { getRandomInt, getRandomIndex } from '../utils.js';
 import run from '../index.js';
 
 const description = 'What number is missing in the progression?';
@@ -23,7 +23,7 @@ const generateRound = () => {
   const step = getRandomInt(minStep, maxStep);
 
   const progression = createLength(start, step, lengthOfProgression);
-  const hiddenIndex = indexSelection(progression);
+  const hiddenIndex = getRandomIndex(progression);
   const answer = String(progression[hiddenIndex]);
   progression[hiddenIndex] = '..';
   const question = progression.join(' ');

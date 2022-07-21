@@ -1,3 +1,3 @@
 export const getRandomInt = (min, max) => Math.round(Math.random() * (max - min)) + min;
 
-export const indexSelection = (arr) => arr.indexOf(arr[getRandomInt(0, arr.length - 1)]);
+export const getRandomIndex = (data) => getRandomInt(0, data.length - 1);

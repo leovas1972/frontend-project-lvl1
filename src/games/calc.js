@@ -1,4 +1,4 @@
-import { getRandomInt, indexSelection } from '../utils.js';
+import { getRandomInt, getRandomIndex } from '../utils.js';
 import run from '../index.js';
 
 const description = 'What is the result of the expression?';
@@ -22,7 +22,7 @@ const calculate = (number1, number2, operation) => {
 const generateRound = () => {
   const number1 = getRandomInt(minRange, maxRange);
   const number2 = getRandomInt(minRange, maxRange);
-  const index = indexSelection(operations);
+  const index = getRandomIndex(operations);
   const answer = String(calculate(number1, number2, operations[index]));
   const question = `${number1} ${operations[index]} ${number2}`;
 
