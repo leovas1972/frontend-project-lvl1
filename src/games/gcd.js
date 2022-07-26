@@ -11,10 +11,10 @@ const generateRound = () => {
   const number1 = getRandomInt(minRange, maxRange);
   const number2 = getRandomInt(minRange, maxRange);
 
-  const answer = String(gcd(number1, number2));
+  const correctAnswer = String(gcd(number1, number2));
   const question = `${number1} ${number2}`;
 
-  return [question, answer];
+  return [question, correctAnswer];
 };
 
 export default () => {

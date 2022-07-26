@@ -9,9 +9,9 @@ const isEven = (number) => number % 2 === 0;
 
 const generateRound = () => {
   const question = getRandomInt(minRange, maxRange);
-  const answer = isEven(question) ? 'yes' : 'no';
+  const correctAnswer = isEven(question) ? 'yes' : 'no';
 
-  return [question, answer];
+  return [question, correctAnswer];
 };
 
 export default () => {

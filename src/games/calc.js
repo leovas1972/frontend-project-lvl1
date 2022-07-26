@@ -23,10 +23,10 @@ const generateRound = () => {
   const number1 = getRandomInt(minRange, maxRange);
   const number2 = getRandomInt(minRange, maxRange);
   const index = getRandomIndex(operations);
-  const answer = String(calculate(number1, number2, operations[index]));
+  const correctAnswer = String(calculate(number1, number2, operations[index]));
   const question = `${number1} ${operations[index]} ${number2}`;
 
-  return [question, answer];
+  return [question, correctAnswer];
 };
 
 export default () => {

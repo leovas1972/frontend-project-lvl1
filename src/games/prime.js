@@ -21,9 +21,9 @@ const isPrime = (number) => {
 
 const generateRound = () => {
   const question = getRandomInt(minRange, maxRange);
-  const answer = isPrime(question) ? 'yes' : 'no';
+  const correctAnswer = isPrime(question) ? 'yes' : 'no';
 
-  return [question, answer];
+  return [question, correctAnswer];
 };
 
 export default () => {
