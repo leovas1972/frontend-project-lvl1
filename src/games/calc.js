@@ -23,7 +23,6 @@ const calculate = (number1, number2, operation) => {
 const generateRound = () => {
   const number1 = getRandomInt(minRange, maxRange);
   const number2 = getRandomInt(minRange, maxRange);
-  
   const correctAnswer = String(calculate(number1, number2, operations[index]));
   const question = `${number1} ${operations[index]} ${number2}`;
 
